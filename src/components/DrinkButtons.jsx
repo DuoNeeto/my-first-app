@@ -1,8 +1,6 @@
 export const DrinkButtons = () => {
-  const message = "Would you like coffee or tea?";
-
   const Header = () => {
-    // Dit heet een 'component'.
+    const message = "Would you like coffee or tea?";
     return <>{message}</>;
   };
 
