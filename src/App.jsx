@@ -1,5 +1,6 @@
 import "./App.css";
 import { DrinkButtons } from "./components/DrinkButtons";
+import { coffee, tea } from "./utils/data";
 
 export const App = () => {
   // COMPONENTS
@@ -20,10 +21,8 @@ export const App = () => {
       <div className="App">
         <h1>Hello Friend!</h1>
         <Header />
-        <DrinkButtons />
+        <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
       </div>
     </>
   );
 };
-
-// BUG: <DrinkButtons /> Zorgt dat alle andere tekst verdwijnt.

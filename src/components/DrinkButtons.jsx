@@ -1,4 +1,7 @@
-export const DrinkButtons = () => {
+import "./DrinkButtons.css";
+import { Button } from "./UI/Button";
+
+export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
   const Header = () => {
     const message = "Would you like coffee or tea?";
     return <>{message}</>;
@@ -8,8 +11,8 @@ export const DrinkButtons = () => {
     <>
       <Header />
       <div className="button-group">
-        <button className="button">Coffee</button>
-        <button className="button">Tea</button>
+        <Button>{drinkOne}</Button>
+        <Button>{drinkTwo}</Button>
       </div>
     </>
   );
