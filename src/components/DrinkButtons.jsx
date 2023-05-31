@@ -11,8 +11,8 @@ export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
     <>
       <Header />
       <div className="button-group">
-        <Button>{drinkOne}</Button>
-        <Button>{drinkTwo}</Button>
+        <Button text={drinkOne} />
+        <Button text={drinkTwo} />
       </div>
     </>
   );
